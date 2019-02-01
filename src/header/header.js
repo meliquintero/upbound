@@ -10,8 +10,7 @@ import {
   NavLink,
   Form,
   FormGroup,
-  Input,
-  Badge } from 'reactstrap';
+  Input } from 'reactstrap';
 
 import { FiList, FiSearch } from 'react-icons/fi';
 
@@ -65,7 +64,7 @@ class Header extends Component {
             <Container>
               <Nav className="mr-auto d-inline-flex" navbar>
                 <Campaigns setCampaignId={this.props.setCampaignId}/>
-                <NavItem style={{'font-size':'1rem'}}>
+                <NavItem style={{fontSize:'1rem'}}>
                   <NavLink href="/pending/"> <FiList/> Pending</NavLink>
                 </NavItem>
               </Nav>
