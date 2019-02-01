@@ -1,12 +1,21 @@
 const Constants = {
   WORKFLOW_CLASS: {
-    saved: 'text-primary',
-    active: 'text-success',
-    pending: 'text-warning',
-    expired: 'text-danger',
-    paused:  'text-mute',
-    terminated: 'text-primary',
-    declined: 'text-danger'
+    saved: 'primary',
+    active: 'success',
+    pending: 'warning',
+    expired: 'danger',
+    paused: 'mute',
+    terminated: 'primary',
+    declined: 'danger'
+  },
+  WORKFLOW_PERCENTAGE: {
+    saved: 50,
+    active: 100,
+    pending: 75,
+    expired: 100,
+    paused: 50,
+    terminated: 100,
+    declined: 100
   }
 }
 

@@ -58,7 +58,7 @@ class Header extends Component {
 
   render() {
     return (
-        <Navbar color="light" light expand="sm">
+        <Navbar color="light" light expand="sm" className="mt-1 border border-secundary">
           <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
             <Container>
