@@ -5,11 +5,25 @@ import Header from './header/header.js';
 import Cards from './cards/cards.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      campaignId: null
+    };
+  }
+
+  // syntatic sugar for binding
+  setCampaignId = (campaignId) => {
+    this.setState({campaignId: campaignId});
+  }
+
   render() {
-    return [
-      <Header />,
-      <Cards />
-    ];
+    return (
+      <div>
+        <Header setCampaignId={this.setCampaignId}/>
+        <Cards campaignId={this.state.campaignId}/>
+      </div>
+    )
   }
 }
 
