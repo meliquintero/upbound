@@ -17,7 +17,7 @@ class Calendar extends Component {
 
   render() {
     return (
-      <Container className="text-danger" style={{'font-size':'.75rem'}}>
+      <Container className="text-danger" style={{'fontSize':'.75rem'}}>
         <FiChevronLeft className="mr-3"/>
         <FiCalendar className="mr-2" />
         {this.state.date}
